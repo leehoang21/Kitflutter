@@ -33,9 +33,10 @@ class LoginScreen extends StatelessWidget {
                       onChanged: (user) {
                         context.read<LoginBloc>().add(InputUser(user: user));
                       },
-                      hintText: "tài khoản",
+                      hintText: "tài khoản : tên bạn",
                     ),
                     RoundedPasswordField(
+                      hintText: 'mật khẩu : Kitflutter',
                       onPressed: (context) {
                         context.read<PassBloc>().add(ChangeOb());
                       },
